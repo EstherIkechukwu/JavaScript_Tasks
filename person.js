@@ -5,8 +5,8 @@ const person = {
 }
 
 function user(person) {
-	return person.firstName +" "+ person.lastName +" "+ person.age
+	return `${person.firstName +" "+ person.lastName +" "+ person.age}`
 }
 
-user().toString()
+console.log(user(person).toString())
 
