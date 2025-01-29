@@ -1,6 +1,9 @@
 const person = {
 	firstName : "Esther",
-	lastName : "Ikechukwu"
+	lastName : "Ikechukwu",
+	fullName : function() {
+		return person.firstName +" "+ person.lastName
+	}
 };
 
-console.log(person.firstName +" " + person.lastName);
+comsole.log(person.fullName());
