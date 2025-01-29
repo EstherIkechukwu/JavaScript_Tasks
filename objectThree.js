@@ -4,4 +4,4 @@ const phone = {
 }
 
 phone.price = 1500
-console.log(phone.price)
+console.log(phone)

@@ -3,4 +3,5 @@ const laptop = {
 	price : 1200
 }
 
-laptop.colour = "blue"
+laptop.colour = "blue";
+console.log(laptop)
