@@ -1,5 +1,24 @@
 {
   "dependencies": {
+    "jest": "^29.7.0",
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "name": "javascript_tasks",
+  "version": "1.0.0",
+  "main": "arrowFunction.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstherIkechukwu/JavaScript_Tasks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EstherIkechukwu/JavaScript_Tasks/issues"
+  },
+  "homepage": "https://github.com/EstherIkechukwu/JavaScript_Tasks#readme",
+  "description": ""
 }
