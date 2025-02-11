@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1739272244608" clover="3.2.0">
-  <project timestamp="1739272244608" name="All files">
-    <metrics statements="74" coveredstatements="74" conditionals="13" coveredconditionals="13" methods="11" coveredmethods="11" elements="98" coveredelements="98" complexity="0" loc="74" ncloc="74" packages="2" files="2" classes="2"/>
+<coverage generated="1739274554130" clover="3.2.0">
+  <project timestamp="1739274554131" name="All files">
+    <metrics statements="94" coveredstatements="92" conditionals="17" coveredconditionals="16" methods="14" coveredmethods="14" elements="125" coveredelements="122" complexity="0" loc="94" ncloc="94" packages="2" files="3" classes="3"/>
     <package name="JavaScript_Tasks">
       <metrics statements="28" coveredstatements="28" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
       <file name="index.js" path="C:\Users\Dell\OneDrive\Desktop\JavaScript_Tasks\index.js">
@@ -37,7 +37,30 @@
       </file>
     </package>
     <package name="JavaScript_Tasks.kata_11th_feb">
-      <metrics statements="46" coveredstatements="46" conditionals="7" coveredconditionals="7" methods="7" coveredmethods="7"/>
+      <metrics statements="66" coveredstatements="64" conditionals="11" coveredconditionals="10" methods="10" coveredmethods="10"/>
+      <file name="bank.js" path="C:\Users\Dell\OneDrive\Desktop\JavaScript_Tasks\kata_11th_feb\bank.js">
+        <metrics statements="20" coveredstatements="18" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
       <file name="student.js" path="C:\Users\Dell\OneDrive\Desktop\JavaScript_Tasks\kata_11th_feb\student.js">
         <metrics statements="46" coveredstatements="46" conditionals="7" coveredconditionals="7" methods="7" coveredmethods="7"/>
         <line num="1" count="1" type="stmt"/>
