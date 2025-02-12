@@ -13,4 +13,5 @@ let total = 0
 for(let fruit in inventory){
     total += inventory[fruit]
 }
+
 console.log(`the Total number of fruits is ${total}`)

@@ -1,4 +1,10 @@
-const {getStudentName, getSecondCourse, getZipCode, updateAge, getDetails, getAge} = require("./student.js");
+const {getStudentName, 
+    getSecondCourse, 
+    getZipCode, 
+    updateAge, 
+    getDetails, 
+    getAge} = require("./student.js");
+
 beforeEach(() => student = {
     name : "John Doe",
     age : 22,
