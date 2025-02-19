@@ -15,10 +15,11 @@ return answer;
 }
 
 const getOddNumbers =(arr)=>{
-let newArray = []
-for(element of arr){
-	if(element % 2 != 0){
-		newArray.push(element);
+let newArray = [];
+let count = 0;
+for(index in arr){
+	if(arr[index] % 2 != 0){
+		newArray[count++] = arr[index]
 	}
 }
 return newArray;

@@ -1,9 +1,10 @@
 const person = {
-    name: Esther,
+    name: "Esther",
     age: 20,
-    sex: female,
+    sex: "female",
     complexion : fair,
-    stateOfOrgin : Enugu,
-    country: Nigeria
-}
+    stateOfOrgin : "Enugu",
+    country: "Nigeria"
+};
 
+console.log(person)

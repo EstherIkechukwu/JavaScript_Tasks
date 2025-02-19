@@ -8,7 +8,9 @@ const{getDoubleNumbers,
     squaredNumbers, distributeBooks,
     getAfternoonClasses,
     getTotalAmount,
-    getHealthyItems} = require("./array");
+    getHealthyItems,
+    getOnesAndZeros,
+    getHighestCommonFactor} = require("./array");
 
 beforeEach(() =>(
     numbers = [2,3,4,5,6,7]
@@ -85,13 +87,11 @@ test(`distribute a different book to each member of the book club`, () => {
     const members = ["Emily", "Jack", "Sophia", "Daniel"];
     const books = ["The Alchemist", "The Great Gatsby", "The Catcher in the Rye", "To Kill a Mockingbird"];
     let result = distributeBooks(members, books);
-    let answer = [
-        {name: "Emily", book: "The Alchemist"},
-        {name: "Jack", book: "The Great Gatsby"},
-        {name: "Sophia", book: "The Catcher in the Rye"},
-        {name: "Daniel", book: "To Kill a Mockingbird"}
-    ];
-    expect(result).toBe(answer);
+    let answer = {"Daniel": "To Kill a Mockingbird", 
+        "Emily":  "The Alchemist",
+        "Jack": "The Great Gatsby",
+        "Sophia": "The Catcher in the Rye"};
+    expect(result).toEqual(answer);
 })
 
 test(`return classes offered in the afternoon`, () => {
@@ -126,3 +126,16 @@ test(`return an array of healthy items`, () => {
     expect(result).toEqual(answer);
 })
 
+test(`return an array of ones and zeros`, () => {
+    const numbers = [4,5,8,8,8,2,9]
+    let result = getOnesAndZeros(numbers);
+    let answer = [0,1,0,0,0,0,1];
+    expect(result).toEqual(answer);
+})
+
+test(`return an array of the highest common factor`, () =>{
+    const numbers = [6,12,18]
+    let result = getHighestCommonFactor(numbers);
+    let answer = [2,3]
+    expect(result).toEqual(answer);
+})

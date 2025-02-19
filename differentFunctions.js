@@ -1,4 +1,4 @@
-
+//function declaration
 console.log(getName());
 
 function getName() {
@@ -6,6 +6,7 @@ function getName() {
 };
 
 
+//function expression
 const greet = function () {
 	return "Good morning"
 }

@@ -53,9 +53,9 @@ function squaredNumbers(arr) {
 }
 
 function distributeBooks(books, members) {
-    const library = [];
-    for(let [index, key] of members.entries()) {
-        library[key] = books[index]
+    const library = {};
+    for(let [index, key] of books.entries()) {
+        library[key] = members[index]
         }
     return library
 }
@@ -77,9 +77,24 @@ function getHealthyItems(shoppingList){
     return items
     // let healthy = shoppingList.forEach((element)=> {
     //     if(element["isHealthy"] === true){
-    //         items.push(element)
     //     }
     // });
+}
+
+function getOnesAndZeros(numbers) {
+    return numbers.map((number) => number % 2 === 0 ? 0 : 1)
+}
+
+function getHighestCommonFactor(numbers) {
+    let highestCommonFactor = [];
+    for(let index = 1; index <= Math.min(numbers); index++) {
+        for(let number in numbers){
+            if(numbers[number] % index !== 0) {
+                break
+            }
+        }
+    }
+    return highestCommonFactor
 }
 
 
@@ -93,4 +108,6 @@ module.exports = {getDoubleNumbers,
     squaredNumbers, distributeBooks,
     getAfternoonClasses,
     getTotalAmount,
-    getHealthyItems}; 
+    getHealthyItems, 
+    getOnesAndZeros,
+    getHighestCommonFactor}; 
