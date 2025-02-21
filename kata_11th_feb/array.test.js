@@ -10,7 +10,7 @@ const{getDoubleNumbers,
     getTotalAmount,
     getHealthyItems,
     getOnesAndZeros,
-    getHighestCommonFactor} = require("./array");
+    pascalTriangle} = require("./array");
 
 beforeEach(() =>(
     numbers = [2,3,4,5,6,7]
@@ -133,9 +133,15 @@ test(`return an array of ones and zeros`, () => {
     expect(result).toEqual(answer);
 })
 
-test(`return an array of the highest common factor`, () =>{
-    const numbers = [6,12,18]
-    let result = getHighestCommonFactor(numbers);
-    let answer = [2,3]
+// test(`return an array of the highest common factor`, () =>{
+//     const numbers = [6,12,18]
+//     let result = getHighestCommonFactor(numbers);
+//     let answer = [2,3]
+//     expect(result).toEqual(answer);
+// })
+
+test('generate the first rows of pascal triangle', () => {
+    let result = pascalTriangle(5);
+    let answer = [[1], [1,1], [1,2,1], [1,3,3,1], [1,4,6,4,1]];
     expect(result).toEqual(answer);
 })

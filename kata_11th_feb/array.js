@@ -85,23 +85,37 @@ function getOnesAndZeros(numbers) {
     return numbers.map((number) => number % 2 === 0 ? 0 : 1)
 }
 
-function getHighestCommonFactor(numbers) {
-    let highestCommonFactor = [];
-    for(let index = 1; index <= Math.min(numbers); index++) {
-        for(let number in numbers){
-            if(numbers[number] % index !== 0) {
-                break
+// function getHighestCommonFactor(numbers) {
+//     let highestCommonFactor = [];
+//     for(let index = 1; index <= Math.min(numbers); index++) {
+//         for(let number in numbers){
+//             if(numbers[number] % index !== 0) {
+//                 break
+//             }
+//         }
+//     }
+//     return highestCommonFactor
+// }
+
+function pascalTriangle(rows) {
+    let triangle = [];
+    for(let row = 0; row < rows; row++) {
+        triangle[row] = [];
+        for(let column = 0; column <= row; column++) {
+            if(column === 0 || column === row) {
+                triangle[row][column] = 1
+            } else {
+                triangle[row][column] = triangle[row - 1][column - 1] + triangle[row - 1][column]
             }
         }
     }
-    return highestCommonFactor
+    return triangle
 }
-
 
 module.exports = {getDoubleNumbers, 
     getEvenNumbers, 
     addThreeToEachElement, 
-    getOddNumbers, 
+    getOddNumbers,  
     getWordsWithLengthGreaterThanFour,
     getStudents, getScores,
     addFiveToEachElement,
@@ -110,4 +124,4 @@ module.exports = {getDoubleNumbers,
     getTotalAmount,
     getHealthyItems, 
     getOnesAndZeros,
-    getHighestCommonFactor}; 
+    pascalTriangle}; 

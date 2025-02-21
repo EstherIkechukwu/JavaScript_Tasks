@@ -14,7 +14,7 @@ class MyStack:
         self.size += 1
 
     def is_not_empty(self):
-        self.is_empty = True
+        self.is_empty = False
         return self.is_empty
 
     def size(self):
