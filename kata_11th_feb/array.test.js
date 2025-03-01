@@ -10,7 +10,9 @@ const{getDoubleNumbers,
     getTotalAmount,
     getHealthyItems,
     getOnesAndZeros,
-    pascalTriangle} = require("./array");
+    pascalTriangle,
+    findMissingNumbers,
+    multiplesOfC} = require("./array");
 
 beforeEach(() =>(
     numbers = [2,3,4,5,6,7]
@@ -143,5 +145,18 @@ test(`return an array of ones and zeros`, () => {
 test('generate the first rows of pascal triangle', () => {
     let result = pascalTriangle(5);
     let answer = [[1], [1,1], [1,2,1], [1,3,3,1], [1,4,6,4,1]];
+    expect(result).toEqual(answer);
+})
+
+test('return an array of missing numbers in a array of numbers', () => {
+    const numbers = [1,2,5]
+    let result = findMissingNumbers(numbers);
+    let answer = [3,4];
+    expect(result).toEqual(answer);
+})
+
+test('return multiples of c between a and b', () => {
+    let result = multiplesOfC(1, 10, 2);
+    let answer = [2,4,6,8,10];
     expect(result).toEqual(answer);
 })

@@ -112,6 +112,26 @@ function pascalTriangle(rows) {
     return triangle
 }
 
+function findMissingNumbers(numbers) {
+    let missingNumbers = [];
+    for(let index = 1; index < Math.max(...numbers); index++) {
+        if(!numbers.includes(index)) {
+            missingNumbers.push(index)
+        }
+    }
+    return missingNumbers
+}
+
+function multiplesOfC(a, b, c) {
+    let multiples = [];
+    for(let index = a; index <= b; index++) {
+        if(index % c === 0) {
+            multiples.push(index)
+        }
+    }
+    return multiples
+}
+
 module.exports = {getDoubleNumbers, 
     getEvenNumbers, 
     addThreeToEachElement, 
@@ -124,4 +144,6 @@ module.exports = {getDoubleNumbers,
     getTotalAmount,
     getHealthyItems, 
     getOnesAndZeros,
-    pascalTriangle}; 
+    pascalTriangle,
+    findMissingNumbers,
+    multiplesOfC}; 
